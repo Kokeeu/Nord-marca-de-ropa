@@ -1,0 +1,34 @@
+.hero-mosaic {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.hero-mosaic__tile {
+  background: var(--color-champagne-gold);
+  border-radius: 2px;
+  opacity: 0;
+  animation: tileFade 1.2s ease-out forwards;
+}
+
+@keyframes tileFade {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 0.92;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-mosaic {
+    width: 200px;
+    height: 200px;
+    gap: 4px;
+  }
+}

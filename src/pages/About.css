@@ -1,0 +1,112 @@
+.about {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-80) var(--spacing-40);
+}
+
+.about__hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+  margin-bottom: var(--spacing-80);
+  max-width: 800px;
+}
+
+.about__eyebrow {
+  font-size: 10px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-champagne-gold);
+}
+
+.about__title {
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-candlelight-cream);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--spacing-56);
+  padding: var(--spacing-48) 0;
+  border-top: 1px solid var(--border-hairline);
+  border-bottom: 1px solid var(--border-hairline);
+  margin-bottom: var(--spacing-80);
+}
+
+.about__col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+}
+
+.about__lede {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--color-candlelight-cream);
+  letter-spacing: -0.2px;
+}
+
+.about__body {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-candlelight-cream);
+  opacity: 0.75;
+}
+
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-24);
+}
+
+.about__stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+  padding: var(--spacing-24) 0;
+  border-top: 1px solid var(--color-champagne-gold);
+}
+
+.about__stat-num {
+  font-size: 36px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-candlelight-cream);
+  letter-spacing: -1.2px;
+  line-height: 1;
+}
+
+.about__stat-label {
+  font-size: 10px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  color: var(--color-candlelight-cream);
+  opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-24);
+  }
+  .about__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: var(--spacing-40) var(--spacing-20);
+  }
+  .about__title {
+    font-size: 32px;
+    letter-spacing: -1.3px;
+  }
+  .about__stats {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,24 @@
+.ghost-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  font-size: 12px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-candlelight-cream);
+  transition: color 0.2s ease;
+  letter-spacing: 0.1px;
+}
+
+.ghost-link:hover {
+  color: var(--color-champagne-gold);
+}
+
+.ghost-link__arrow {
+  font-size: 14px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.ghost-link:hover .ghost-link__arrow {
+  transform: translateX(4px);
+}
